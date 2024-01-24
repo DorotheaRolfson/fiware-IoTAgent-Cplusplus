@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema*",
   "title": "Service",
   "description": "A service",
   "additionalProperties": false,
@@ -24,7 +24,7 @@
           },
           "entity_type": {
             "description": "default entity_type, if a device has not got entity_type uses this",
-            "pattern": "^([^<>();'=\"/?#& ]+)*$",
+            "pattern": "^([^<>();'=\"/?#& ]+)#$",
             "type": "string",
             "maxLength": 256
           },
@@ -200,3 +200,4 @@
     "services"
   ]
 }
+ 
